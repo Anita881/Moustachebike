@@ -11,6 +11,7 @@
 .left {
     left: 0;
     background-color: #ffffff;
+    margin-top: 10px;
 }
 
 /* Control the right side */
@@ -22,7 +23,7 @@
 .imageChanger {
     background-image:url("Lundi271.jpg");
     background-repeat: no-repeat;
-    height: 400px
+    height: 400px;
 }
 .boutonVelo {
     font-family: 'Lobster', cursive;
@@ -31,6 +32,7 @@
     text-align: center;
     background-color: #7881ad;
     color:white;
+    margin-top: 10px;
 }
 .boutonVelo:hover {
     background-color: #3d3b3b;
@@ -44,4 +46,7 @@
     color: white;
     background-color: #3d3b3b;
 
+}
+.image {
+    text-align: center;
 }
