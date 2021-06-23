@@ -55,5 +55,14 @@
     background-position: center;
 }
 .description {
-
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.moteur {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.prix {
+    font-size: 20px;
+    font-family: sans-serif;
 }
