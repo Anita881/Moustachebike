@@ -1,0 +1,57 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="css.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app" >
+
+    <div class="split left">
+        <div class="image"> <img src="logo.png" alt="ceci est un logo"></div>
+        <div class="boutonVelo" v-for="Velo in listeVelos" @click="selectedBike = Velo">{{Velo.text}}</div>
+    </div>
+    <div class="split right imageChanger">
+        <div class="Image" :style="{ backgroundImage: 'url(' + selectedBike.image + ')' }"></div>
+        <div class="nom">{{selectedBike.text}}</div>
+        <div class="description">{{selectedBike.description}}</div>
+        <div class="moteur">{{selectedBike.moteur}}</div>
+        <div class="prix">{{selectedBike.price}}</div>
+    </div>
+
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            selectedBike:{},
+            listeVelos: [
+                {text: 'Lundi 27.1', image: 'Lundi271.jpg', description:'Rien de tel que démarrer sa semaine, sourire aux lèvres au guidon de Lundi 27.1. Tellement agréable à rouler, ultra naturel, silencieux et économe en énergie.' ,moteur: 'Moteur: Bosch Active Line Plus', price: 'Prix: 2 999€'},
+                {text: 'Lundi 27.3', image: 'Lundi273.jpg', description:'Affronter les montées les plus sévères ne sera qu\'une formalité au guidon de Lundi 27.3 bien assisté par le puissant moteur Bosch Performance et sa batterie de 500Wh. ' ,moteur: 'Moteur: Bosch Performance Line', price: 'Prix: 3 399€'},
+                {text: 'Lundi 27.5', image: 'Lundi275.jpg', description:'Fluidité des changements de vitesse, fluidité du moteur, fluidité des déplacements. Lundi 27.5 vous aidera à rester calme et serein même au milieu de la jungle urbaine.' ,moteur: 'Moteur: Bosch Performance Line', price: 'Prix: 3 899€'},
+
+            ]
+        },
+        computed: {
+
+        },
+        methods: {
+
+        },
+        created: function () {
+            this.selectedBike = this.listeVelos[0];
+            console.log(this.selectedBike);
+        }
+
+    })
+</script>
+</body>
+</html>

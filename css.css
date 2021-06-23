@@ -1,0 +1,37 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: #ffffff;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.01);
+}
+
+.imageChanger {
+    background-image:url("Lundi271.jpg");
+    background-repeat: no-repeat;
+    height: 400px
+}
+.boutonVelo {
+    font-family: 'Lobster', cursive;
+    font-size:50px;
+    width:50%;
+    text-align: center;
+    background-color: #7881ad;
+    color:white;
+}
+.boutonVelo:hover {
+    background-color: #3d3b3b;
+}
