@@ -53,16 +53,20 @@
 }
 .Image {
     background-position: center;
+    margin-top: 10px;
 }
 .description {
     font-size: 20px;
     font-family: sans-serif;
+    margin-top: 10px;
 }
 .moteur {
     font-size: 20px;
     font-family: sans-serif;
+    margin-top: 10px;
 }
 .prix {
     font-size: 20px;
     font-family: sans-serif;
+    margin-top: 10px;
 }
