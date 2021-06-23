@@ -29,9 +29,11 @@
     font-family: 'Lobster', cursive;
     font-size:50px;
     width:50%;
+    height: 100px;
     text-align: center;
     background-color: #7881ad;
     color:white;
+    padding-top: 20px;
     margin-top: 10px;
     border-radius: 5px;
 }
