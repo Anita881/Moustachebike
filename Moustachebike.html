@@ -14,8 +14,8 @@
         <div class="image"> <img src="logo.png" alt="ceci est un logo"></div>
         <div class="boutonVelo" v-for="Velo in listeVelos" @click="selectedBike = Velo">{{Velo.text}}</div>
     </div>
-    <div class="split right imageChanger">
-        <div class="Image" :style="{ backgroundImage: 'url(' + selectedBike.image + ')' }"></div>
+    <div class="split right">
+        <div class="Image imageChanger" :style="{ backgroundImage: 'url(' + selectedBike.image + ')' }"></div>
         <div class="nom">{{selectedBike.text}}</div>
         <div class="description">{{selectedBike.description}}</div>
         <div class="moteur">{{selectedBike.moteur}}</div>
